@@ -15,7 +15,7 @@ The following is a brief overview of the program and import process.
 ## CSV file preparation 
 
 You will need to create a csv file for main.py to read in. The file should be formatted as follows: 
-| dc.identifier.uniqueID      | dc.title | dc.date.issued | dc.creator                               | dc.identifier.patentID |
+| dc.identifier.uniqueID      | dc.title | dc.date.issued | dc.creator| dc.identifier.patentID |
 | --------------------------- | -------- | -------------- | ---------------------------------------- | ---------------------- |
 | a unique ID                 | Title    | issue date     | inventor names separated by double pipes |  patent number
 
