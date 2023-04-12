@@ -21,7 +21,7 @@ You will need to create a csv file for main.py to read in. Each patent should ha
 
 - **dc.identifier.uniqueID**: A unique identifier assigned to each patent. This will be used as the research output uuid in pure. It is essential to devise an immutable uuid for each patent so that you are able to update the patent via the bulk importer as opposed to creating anothter representation of it. 
 - **dc.title**: The patent's title. This field can be ignored if you do not have this information as it is available through the PatentsView API as well.
-- **dc.date.issued**: The issue date of the patent used in the publication date field in Pure. This information is also available through the PatentsView API. If you do not have it, you could modify the program to include it in your query.
+- **dc.date.issued**: The issue date of the patent used in the publication date field in Pure. Must be formatted according to Dublin Core standards: YYYY-MM-DD. This information is also available through the PatentsView API. If you do not have it, you could modify the program to include it in your query.
 - **dc.creator**: inventors first and last names separated by '||'. This information is also available through the PatentsView API. If you do not have it, you could modify the program to include it in your query.
 - **dc.identifier.patentID**: The patent number. This field is necessary for us to search the PatentsView API. 
 
