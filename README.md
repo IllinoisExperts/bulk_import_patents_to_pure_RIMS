@@ -14,10 +14,10 @@ The following is a brief overview of the program and import process.
 
 ## CSV file preparation 
 
-You will need to create a csv file for main.py to read in. The file should be formatted as follows: 
+You will need to create a csv file for main.py to read in. Each patent should have a unique identifier, a title, a date issued, a creator(s), and a patent number. For example, for a patent titled "Important Invention" issued on 2023-04-12 to the creators Elizabeth Schwartz and Mark Zulauf, the patent should be rendered as follows
 | dc.identifier.uniqueID      | dc.title | dc.date.issued | dc.creator| dc.identifier.patentID |
 | --------------------------- | -------- | -------------- | ---------------------------------------- | ---------------------- |
-| a unique ID                 | Title    | issue date     | inventor names separated by double pipes |  patent number
+| 000123                 | Important Invention    | 2023-04-12     | Schwartz, Elizabeth|| Zulauf, Mark |  123456
 
 
 ## Registering for a PatentsView API key
