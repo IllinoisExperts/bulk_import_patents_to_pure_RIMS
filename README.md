@@ -27,7 +27,7 @@ You will need to create a csv file for main.py to read in. Each patent should ha
 
 
 ## Registering for a PatentsView API key
-Registering for a PatentsView API key is completely free! Follow the (instructions)[https://patentsview.org/apis/keyrequest] on the PatentsView site.
+Registering for a PatentsView API key is completely free! Follow the [instructions](https://patentsview.org/apis/keyrequest) on the PatentsView site.
 
 ## Setting up Python
 
