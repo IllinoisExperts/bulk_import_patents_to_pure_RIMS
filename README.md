@@ -62,10 +62,31 @@ Download this github repo using whatever method you prefer. If you don't have a 
 - [time](https://docs.python.org/3/library/time.html): comes with python standard install
 
 
-
 ## A brief tour of the program
 
+In addition to the external libraries discussed above, this program relies on five custom libraries created for this program: csv_scraping.py, internal_persons_matcher.py, csv_processor.py, compares_inventor_lists.py, and patentsview_scraper.py. These programs hold a variety of functions that scrape and format metadata from the csv file to be put in xml, supplement patents with metadata from the USPTO API, match names to internal persons, and create logs of changes in inventor lists between files. There is no need to run these libraries because main.py and adds_gov_ints.py invoke them as they execute.
+
+patents.xml is the outfile to which you will write the xml rendered using ElementTree. This is the file you should upload to Pure’s bulk importer. If you prefer to change the files’s name, you can do so by renaming the outfile.
+
+main.py and add_gov_int.py are the only 2 programs you will run.
+
 ## Running main.py
+
+- Navigate main.py program and run it.
+- First, the programm will ask you to enter the complete path to the csv file you just created.
+- answer the prompt in the console by typing "y" if you are going to bulk import the xml file into the public portal (for production) or "n" if you are going to upload the xml file into the test portal.
+- provide the complete path to the internal persons excel file you will be using to match people to internal persons. This file will be different dependent on whether or not you are uploading to staging or production.
+- enter the UUID associated with your organization in backend of the associated instance (staging or production). 
+- enter the name of your organization
+- enter your PatentsView API key
+- finally enter the name of the xml file you want to create. I.e., 'uiuc_patents_2023-01-25.xml'
+
+The program will commence writing an xml rendered patent object out to patents.xml for every row in the csv file. If any the date field is missing a year or is not formatted properly, the program will send an error message asking you to write a four digit integer date for a patent on the corresponding line. For example, entering nothing for the date field will cause an error as will entering the year 1996 as ’96. Additionally, for each row in the file it will use the patent’s number to query the PatentsView api for title, abstract, and filing date information. If the query is unsuccessful, the program prints an associated error message. Note that none of the fields from the uspto api are mandatory.
+
+The program will stop after it sends 40 requests to the api and wait 60 seconds to restart. This is intentional. PatentsView can only process 45 requests/minute/user. To prevent the server from sending us 500 errors, we have to wait between request batches.
+
+The program may take around an hour to run (it takes about 50 minutes to process 1600 patents). This is not cause for concern.
+Once the program finishes running, it will print and exit report and produce two files. The exit report explains how many patents failed to connect to the API. If this number makes up a significant portion of the total, it is likely that something went wrong with the API. The xml file the program produces is that which you will upload to Pure.
 
 ## Bulk importing to Pure
 
