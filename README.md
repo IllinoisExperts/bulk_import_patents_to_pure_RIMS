@@ -51,7 +51,7 @@ Download this github repo using whatever method you prefer. If you don't have a 
 **bulk_import_patents_to_pure_RIMS** requires the installation of a number of python packages some of which come with standard Python and others that need to be installed in a virtual environment. Their names, documentation, and installation instructions are available below: 
 - [tqdm.tqdm](https://tqdm.github.io/)  
 - [fuzzywuzzy](https://pypi.org/project/fuzzywuzzy/) or for [conda](https://anaconda.org/conda-forge/fuzzywuzzy) install
-- [pandas]([https://pandas.pydata.org/](https://pandas.pydata.org/docs/getting_started/install.html): for an anaconda environment, enter the following command in the terminal "conda install pandas" after activating the environment
+- [pandas](https://pandas.pydata.org/docs/getting_started/install.html): for an anaconda environment, enter the following command in the terminal "conda install pandas" after activating the environment
 - [numpy](https://numpy.org/install/): for an anaconda environment, enter the following command in the terminal "conda install numpy" after activating the environment
 - [json](https://docs.python.org/3/library/json.html): comes with python standard install
 - [random](https://docs.python.org/3/library/random.html): comes with python standard install
