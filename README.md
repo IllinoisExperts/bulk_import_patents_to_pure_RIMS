@@ -17,7 +17,7 @@ The following is a brief overview of the program and import process.
 You will need to create a csv file for main.py to read in. Each patent should have a unique identifier, a title, a date issued, a creator(s), and a patent number. For example, for a patent titled "Important Invention" issued on 2023-04-12 to the creators Elizabeth Schwartz and Mark Zulauf, the patent should be rendered as follows
 | dc.identifier.uniqueID      | dc.title | dc.date.issued | dc.creator| dc.identifier.patentID |
 | --------------------------- | -------- | -------------- | ---------------------------------------- | ---------------------- |
-| 000123                 | Important Invention    | 2023-04-12     | Schwartz, Elizabeth|| Zulauf, Mark |  123456
+| 000123                 | Important Invention    | 2023-04-12     | Schwartz, Elizabeth ( &#124; )( &#124; ) Zulauf, Mark |  123456
 
 
 ## Registering for a PatentsView API key
