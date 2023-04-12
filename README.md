@@ -49,17 +49,17 @@ Download this github repo using whatever method you prefer. If you don't have a 
 ### Dependencies Installation 
 
 **bulk_import_patents_to_pure_RIMS** requires the installation of a number of python packages some of which come with standard Python and others that need to be installed in a virtual environment. Their names, documentation, and installation instructions are available below: 
-- tqdm.tqdm: https://tqdm.github.io/  
-- fuzzywuzzy: https://pypi.org/project/fuzzywuzzy/ 
-- pandas: https://pandas.pydata.org/
-- numpy: https://numpy.org/ 
-- [json](https://docs.python.org/3/library/json.html)(comes with python standard install)
-- [random](https://docs.python.org/3/library/random.html)(comes with python standard install)
-- [csv](https://docs.python.org/3/library/csv.html)(comes with python standard install)
-- [re](https://docs.python.org/3/library/re.html)(comes with python standard install)
-- [requests](https://docs.python-requests.org/en/latest/)(comes with python standard install)
-- [ElementTree](https://docs.python.org/3/library/xml.etree.elementtree.html)(comes with python standard install)
-- [time](https://docs.python.org/3/library/time.html)(comes with python standard install)
+- [tqdm.tqdm](https://tqdm.github.io/)  
+- [fuzzywuzzy](https://pypi.org/project/fuzzywuzzy/) or for [conda](https://anaconda.org/conda-forge/fuzzywuzzy) install
+- [pandas]([https://pandas.pydata.org/](https://pandas.pydata.org/docs/getting_started/install.html): for an anaconda environment, enter the following command in the terminal "conda install pandas" after activating the environment
+- [numpy](https://numpy.org/install/): for an anaconda environment, enter the following command in the terminal "conda install numpy" after activating the environment
+- [json](https://docs.python.org/3/library/json.html): comes with python standard install
+- [random](https://docs.python.org/3/library/random.html): comes with python standard install
+- [csv](https://docs.python.org/3/library/csv.html): comes with python standard install
+- [re](https://docs.python.org/3/library/re.html): comes with python standard install
+- [requests](https://docs.python-requests.org/en/latest/): comes with python standard install
+- [ElementTree](https://docs.python.org/3/library/xml.etree.elementtree.html): comes with python standard install
+- [time](https://docs.python.org/3/library/time.html): comes with python standard install
 
 
 
