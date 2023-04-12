@@ -31,6 +31,26 @@ Registering for a PatentsView API key is completely free! Follow the [instructio
 
 ## Setting up Python
 
+After you have created the csv file and registered for a PatentsView API key, you're ready to move over to Python. 
+
+### Installing Python (if you haven't before)
+If you have not downloaded Python before, visit Python's [website](https://www.python.org/downloads/) and download the most recent package that correlates with your particular machine (windows, macOS, or linux). Check out this [tutorial](https://realpython.com/installing-python/) for help with installations on windows, mac, or linux.
+
+Next, you will probably want to install a virtual environment. Virtual environments allow you to download different python packages that may modify how your computer works without applying those changes to your entire machine. There are many types of virtual environments, but Anaconda navigator is probably the most popular and it's *free*. Install Anaconda following the instructions on its [website](https://docs.anaconda.com/anaconda/install/index.html). After installing Anaconda, you need to set up your first conda virtual environment. Follow [this](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) tutorial. 
+
+We will need to install a number of python libraries in the Anaconda virtual environment. See **Dependencies Installation** below and install the packages using their conda installation guides.
+
+Finally, you probably want to work with python in an IDE or integrated development environment. IDEs allow you to create, edit, and run python code in a more user friendly environment. There are many popular and free IDEs. VSCode is one of the more popular free IDEs. You can download it following the directions on its [website](https://code.visualstudio.com/download). You'll want to install VSCode's [python extension](https://code.visualstudio.com/docs/python/python-tutorial) to use it as a python IDE. Next we need to make sure that VSCode can find the [anaconda virtual environment](https://code.visualstudio.com/docs/python/environments) we just created so that it can access all the python libraries we just downloaded.
+
+### Downloading this github repo
+
+Download this github repo using whatever method you prefer. If you don't have a preference, I recommend locating the code button on the right hand side of the screen, clicking it, and selecting Download ZIP. 
+
+### Dependencies Installation 
+
+**bulk_import_patents_to_pure_RIMS** requires the installation of a number of python packages. Their names, documentation, and installation instructions are available below: 
+
+
 ## A brief tour of the program
 
 ## Running main.py
