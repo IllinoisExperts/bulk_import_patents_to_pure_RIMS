@@ -89,6 +89,8 @@ The program may take around an hour to run (it takes about 50 minutes to process
 Once the program finishes running, it will print and exit report and produce two files. The exit report explains how many patents failed to connect to the API. If this number makes up a significant portion of the total, it is likely that something went wrong with the API. The xml file the program produces is that which you will upload to Pure.
 
 ## Bulk importing to Pure
+Once the program finishes running navigate to the Pure bulk importer and upload the patents.xml file for validation. On the “Verify/Configure” tab, toggle the “Updating Existing Publications” option to “on.” Continue through the import Wizard.
+After successfully importing the patents, you will need to run the SDG keywords task because reuploading abstracts automatically overwrites these keywords. Also, rerun the re-affiliation task to reaffiliate internal people with their organizational units. Uploading xml automatically overwrites these.
 
 ## Adding government interest statetments
 
