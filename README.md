@@ -94,9 +94,19 @@ After successfully importing the patents, you will need to run the SDG keywords 
 
 ## Adding government interest statetments
 
-## Current problems with the program in need of solving
+Following bulk upload to Pure, you can add any government interest statements on the patents via the Pure read/write API. Currently, adding a bibliographical note to a research output via XML causes a validation error in the bulk upload process. This process was developed as a way around this bug. 
+- Navigate to the add_gov_interest_statements.py program and run it
+- The program will prompt you to enter the complete path to the patents csv file. This should be the same file you used to write XML in main.py. 
+- Next, it will prompt you to enter the path to a .txt file to which it will write any error reports (patents the could not be found in your pure system or patents that failed to upload via the API)
+- Enter whether you will be uploading to producion (y) or staging (n)
+- Enter the api key associated with the appropriate server. Make sure the API key you supply allows for both reading and writing of research-output 
+- Enter the url of the API server you will be using. This should read something like https://experts.illinois.edu/ws/api/. Ensure the url you provide ends with ws/api/
+- Add your PatentsView API key
+- The program will begin running. After it makes 40 requests to the PatentsView API, it will rest for 1 minute. This program will take longer to run than main.py because it is connecting to 2 separate APIs and making multiple requests per patent. 
+- After it runs, you can review the error report and review the changes on your portal. 
 
-If you use this program for any publication, please cite it as follows: 
+
+**If you use this program for any publication, please cite it as follows:** 
 
 Schwartz, Elizabeth, Mark Zulauf, Elias Hubbard, and Sara Rasmussen. Bulk Import Patents to Pure RIMS. 2023. 
 
