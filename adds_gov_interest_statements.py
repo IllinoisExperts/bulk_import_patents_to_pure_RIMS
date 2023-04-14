@@ -16,12 +16,12 @@ def main():
     else:
         while not os.path.isfile(patents_file) and patents_file != 'quit':
             print(patents_file, 'is not a valid file. Enter a valid file name or "quit" to terminate the program.')
-            patents_file = input('enter complete path to the otm csv file: ')
+            patents_file = input('enter complete path to the patents csv file: ')
         patents = csv_to_dict(patents_file)
     outfile_path = input('enter complete path to a txt file for writing results: ')
     while not os.path.isfile(outfile_path) and outfile_path != 'quit':
         print(outfile_path, 'is not a valid file. Enter a valid file name or "quit" to terminate the program.')
-        outfile_path = input('enter complete path to the otm csv file: ')
+        outfile_path = input('enter complete path to the patents csv file: ')
     setting = input('are you loading data to the public portal (enter y or n): ')
     if setting == 'y':
         pure_api_key = input('enter your key to your Pure production API: ')
